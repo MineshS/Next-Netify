@@ -7,9 +7,9 @@ import { SingleProduct } from '#/app/streaming/_components/single-product';
 import { Ping } from '#/ui/ping';
 import { Suspense } from 'react';
 
-import { Config, Context } from '@netlify/edge-functions';
+export const runtime = 'edge';
 
-export default async function Page({ params }: { params: { id: string } }, context: Context) {
+export default async function Page({ params }: { params: { id: string } }) {
   return (
     <div className="space-y-8 lg:space-y-14">
       {/* @ts-expect-error Async Server Component */}
