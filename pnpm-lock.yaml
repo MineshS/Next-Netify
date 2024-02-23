@@ -1,9 +1,16 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@heroicons/react':
     specifier: 1.0.6
     version: 1.0.6(react@18.2.0)
+  '@netlify/edge-functions':
+    specifier: 2.3.1
+    version: 2.3.1
   clsx:
     specifier: 1.2.1
     version: 1.2.1
@@ -2971,6 +2978,10 @@ packages:
     transitivePeerDependencies:
       - encoding
       - supports-color
+    dev: false
+
+  /@netlify/edge-functions@2.3.1:
+    resolution: {integrity: sha512-3sJzP1DmzMZppkAZpUixdHA4ryiKD1NSpLMRViYStE9Oe10rZPSnM8yl6A90vTBqCYvbAF5S7W9oPf2ucrCCIQ==}
     dev: false
 
   /@next/env@14.1.1-canary.36:
@@ -7383,6 +7394,7 @@ packages:
 
   /node-addon-api@1.7.2:
     resolution: {integrity: sha512-ibPK3iA+vaY1eEjESkQkM0BbCqFOaZMiXRTtdB0u7b4djtY6JnsjvPdUHVMg6xQt3B8fpTTWHI9A+ADjM9frzg==}
+    requiresBuild: true
     dev: false
     optional: true
 
